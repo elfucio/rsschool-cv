@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvira Iskhakova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+		<header class="header">
+			<div class="header-title-wrapper">
+				<h1 class="header-title-wrapper__title">Elvira Iskhakova</h1>
+				<span class="header-title-wrapper__txt">Front-end development student</span>
+			</div>
+			<div class="social">
+				<a href="#" target="_blank" class="social__link twitter"></a>
+				<a href="#" target="_blank" class="social__link facebook"></a>
+				<a href="#" target="_blank" class="social__link linkedin"></a>
+				<a href="#" target="_blank" class="social__link google"></a>
+				<a href="#" target="_blank" class="social__link youtube"></a>
+			</div>
+		</header>
+		<main class="content">
+			<article class="about-me">
+				<img class="profile-photo" src="img/photo.png" alt="photo" width="203" height="286">
+				<section class="short-info">
+					<h2 class="short-info__name">Elvira Iskhakova</h2>
+					<span class="short-info__profession">Front-end development student</span>
+					<div class="short-info-lists">
+						<ul class="short-info-list short-info-list--bold">
+							<li class="short-info-list__item short-info-list__item--bold">Age</li>
+							<li class="short-info-list__item short-info-list__item--bold">Address</li>
+							<li class="short-info-list__item short-info-list__item--bold">E-mail</li>
+							<li class="short-info-list__item short-info-list__item--bold">Phone</li>
+							<li class="short-info-list__item short-info-list__item--bold">GitHub</li>
+							<li class="short-info-list__item short-info-list__item--bold">Telegram</li>
+						</ul>
+						<ul class="short-info-list">
+							<li class="short-info-list__item">29</li>
+							<li class="short-info-list__item">Moscow, Russia</li>
+							<li class="short-info-list__item">elfucio@gmail.com</li>
+							<li class="short-info-list__item">+7(900)1234567</li>
+							<li class="short-info-list__item"><a href="https://github.com/elfucio" target="_blank">elfucio</a></li>
+							<li class="short-info-list__item"><a href="https://t.me/elfucio" target="_blank">@elfucio</a></li>
+						</ul>
+					</div>
+				</section>
+			</article>
+			<section class="skills-and-experience">
+				<section class="experience">
+					<h2 class="experience__title">Experience</h2>
+					<p class="experience__txt">I have a few school projects that I was working on during my courses</p>
+					<ul class="experience__list">
+						<li class="experience__item"><a href="https://github.com/elfucio/simple_psd" class="experience__link"
+								target="_blank">1st project, simple website - HTML/CSS</a></li>
+						<li class="experience__item"><a href="https://github.com/elfucio/waxom" class="experience__link"
+                                target="_blank">2nd project, simple website - HTML/CSS</a></li>
+                        <li class="experience__item"><a href="https://github.com/elfucio/fluffy_bellies" class="experience__link"
+                            target="_blank">3rd project, overlay video - CSS</a></li>
+						<li class="experience__item"><a href="https://github.com/elfucio/3-wasted-days-of-life" class="experience__link"
+								target="_blank">4th project, burger calculator - JavaScript</a></li>
+					</ul>
+				</section>
+				<section class="skills">
+					<h2 class="skills__title">Skills</h2>
+					<div class="skills__wrap">
+						<ul class="skills__list">
+							<li class="skills__item">HTML</li>
+							<li class="skills__item">CSS</li>
+							<li class="skills__item">BEM</li>
+							<li class="skills__item">Git</li>
+							<li class="skills__item">Preprocessors</li>
+							<li class="skills__item">Media queries</li>
+                            <li class="skills__item">JavaScript</li>
+                            <li class="skills__item">Vue.js, Webpack</li>
+							<li class="skills__item">Python</li>
+                            <li class="skills__item">Avocode</li>
+                            <li class="skills__item">VS Code</li>
+						</ul>
+						<ul class="skills__list">
+							<li class="skills__item--star">&#11089;&#11089;&#11089;&#11089;&#11089;</li>
+							<li class="skills__item--star">&#11089;&#11089;&#11089;&#11089;&#11090;</li>
+							<li class="skills__item--star">&#11089;&#11089;&#11089;&#11090;&#11090;</li>
+							<li class="skills__item--star">&#11089;&#11089;&#11089;&#11090;&#11090;</li>
+							<li class="skills__item--star">&#11089;&#11089;&#11089;&#11090;&#11090;</li>
+							<li class="skills__item--star">&#11089;&#11089;&#11089;&#11090;&#11090;</li>
+                            <li class="skills__item--star">&#11089;&#11089;&#11090;&#11090;&#11090;</li>
+                            <li class="skills__item--star">&#11089;&#11090;&#11090;&#11090;&#11090;</li>
+							<li class="skills__item--star">&#11089;&#11090;&#11090;&#11090;&#11090;</li>
+                            <li class="skills__item--star">&#11089;&#11089;&#11089;&#11089;&#11089;</li>
+                            <li class="skills__item--star">&#11089;&#11089;&#11089;&#11089;&#11089;</li>
+						</ul>
+					</div>
+				</section>
+            </section>
+            <section class="code-example">
+                <h2 class="code-example__title">Code example</h2>
+                <pre>
+                    _getStuffing(attrName) {
+                        let obj = {};
+                        obj = uForm.querySelector (`input[name=${attrName}]:checked`);      
+                        return obj.dataset;
+                      }
+                  
+                      _getExtra (attrName) {
+                        let objArr = [...uForm.querySelectorAll (`input[name=${attrName}]:checked`)];
+                        let arr = [];
+                        objArr.forEach (i => {
+                            arr.push ([i.dataset.price, i.dataset.calories]);
+                        });
+                        return arr;
+                      }
+                  
+                      calculateOrder() {		
+                        this.price = +this.size.price + +this.stuffing.price;
+                        this.calories = +this.size.calories + +this.stuffing.calories;
+                        this.extra.forEach (i => {
+                          this.price += +(i[0]);
+                          this.calories += +(i[1]);
+                        });
+                      }
+                  
+                      showTotal () {		
+                        this.calculateOrder();
+                          total.innerText = `Итого: ${this.price} рублей / rub,
+                          ${this.calories} калорий / calories`;
+                      }
+                </pre>
+            </section>
+			<section class="education-and-languages">
+				<section class="education">
+					<h2 class="education__title">Education</h2>
+					<p class="education__txt">Currently studying:</p>
+					<ul class="education__list">
+						<li class="education__item">Front-end development course at <a href="https://geekbrains.ru/users/2828494"
+								class="education__link" target="_blank">Geekbrains</a>. Finished HTML/CSS, JavaScript level 1, started JavaScript level 2</li>
+						<li class="education__item"><a href="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/"
+								class="education__link" target="_blank">CS50’s Introduction to Computer Science by HarvardX: CS50</a>
+						</li>
+					</ul>
+				</section>
+				<section class="languages">
+					<h2 class="languages__title">Foreign languages</h2>
+					<ul class="languages__list">
+						<li class="languages__item"><b>Russian:</b> native</li>
+						<li class="languages__item"><b>English:</b> B2 according to several online tests. Spent a few months (total
+							from 2015-2019) in the United Kingdom for language and cultural exchange</li>
+						<li class="languages__item"><b>French:</b> elementary</li>
+					</ul>
+				</section>
+			</section>
+		</main>
+		<footer class="footer">
+			<h2 class="footer-copyright">&#169;Elvira Iskhakova</h2>
+		</footer>
+	</div>
+</body>
+</html>
