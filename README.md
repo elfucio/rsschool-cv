@@ -1,1 +1,1 @@
-[Elvira Iskhakova](https://elfucio.github.io/rsschool-cv/cv)
+[Elvira Iskhakova](https://elfucio.github.io/rsschool-cv/)
