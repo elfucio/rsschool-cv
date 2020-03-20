@@ -1,0 +1,346 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style-type: none;
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/roboto-regular.ttf);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(../fonts/roboto-bold.ttf);
+}
+body {
+  font-family: "roboto-regular", "Arial", sans-serif;
+}
+a:hover {
+  color: #00735a;
+}
+a:active {
+  color: #5F8DD3;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+}
+.header {
+  padding: 30px 50px;
+  background-color: #00735a;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.header .header-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f9f0dc;
+}
+.header .header-title-wrapper__title {
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.header .header-title-wrapper__txt {
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+  font-size: 0.8rem;
+}
+.header .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.header .social__link {
+  display: block;
+  margin: 5px;
+  width: 45px;
+  height: 42px;
+  opacity: 1;
+}
+.header .social__link:hover {
+  opacity: 0.7;
+}
+.header .social__link:active {
+  opacity: 0.3;
+}
+.header .social .twitter {
+  background-image: url(../img/twitter.png);
+}
+.header .social .facebook {
+  background-image: url(../img/facebook.png);
+}
+.header .social .linkedin {
+  background-image: url(../img/linkedin.png);
+}
+.header .social .google {
+  background-image: url(../img/google.png);
+}
+.header .social .youtube {
+  background-image: url(../img/youtube.png);
+}
+.content {
+  padding: 50px;
+  background-color: #f9f0dc;
+}
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-me .profile-photo:hover {
+  opacity: 0.7;
+}
+.about-me .short-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.about-me .short-info__name {
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+  font-size: 1.5rem;
+}
+.about-me .short-info__profession {
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.about-me .short-info-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.about-me .short-info-lists .short-info-list {
+  font-size: 0.8rem;
+}
+.about-me .short-info-lists .short-info-list__item {
+  margin: 5px 0;
+}
+.about-me .short-info-lists .short-info-list__item--bold {
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+}
+.skills-and-experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.skills-and-experience .experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 25px auto;
+}
+.skills-and-experience .experience__title {
+  margin: 20px auto;
+}
+.skills-and-experience .experience__txt {
+  max-width: 300px;
+}
+.skills-and-experience .experience__list {
+  margin: 10px auto;
+  font-family: "roboto-regular", "Arial", sans-serif;
+  line-height: 1.3rem;
+  align-items: center;
+}
+.skills-and-experience .experience__item {
+  list-style-type: square;
+}
+.skills-and-experience .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 25px auto;
+}
+.skills-and-experience .skills__title {
+  margin: 20px auto;
+}
+.skills-and-experience .skills__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-width: 300px;
+}
+.skills-and-experience .skills__list {
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+  line-height: 1.3rem;
+  align-items: center;
+}
+.skills-and-experience .skills__item--star {
+  font-size: 2.5rem;
+}
+.code-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .code-example {
+      display: none;
+  }
+}
+.code-example .code-example__title {
+  margin: 20px auto;
+}
+.education-and-languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.education-and-languages .education {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+}
+.education-and-languages .education__title {
+  margin: 20px auto;
+}
+.education-and-languages .education__txt {
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+  max-width: 300px;
+}
+.education-and-languages .education__list {
+  margin: 10px auto;
+  font-family: "roboto-regular", "Arial", sans-serif;
+  line-height: 1.3rem;
+  align-items: center;
+}
+.education-and-languages .education__item {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.education-and-languages .languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+}
+.education-and-languages .languages__title {
+  margin: 20px auto;
+}
+.education-and-languages .languages__list {
+  line-height: 1.3rem;
+  align-items: center;
+}
+.education-and-languages .languages__item {
+  list-style-type: square;
+  list-style-position: inside;
+  max-width: 800px;
+}
+.footer {
+  padding: 30px 50px;
+  background-color: #00735a;
+}
+.footer .footer-copyright {
+  text-align: left;
+  font-family: "roboto-bold", "Arial-BoldMT", sans-serif;
+  font-size: 0.8rem;
+  color: #f9f0dc;
+}
